@@ -8,20 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		1BF48C6521DBF2AB006D80AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C6421DBF2AB006D80AD /* AppDelegate.swift */; };
-		1BF48C6721DBF2AB006D80AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C6621DBF2AB006D80AD /* ViewController.swift */; };
 		1BF48C6A21DBF2AB006D80AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF48C6821DBF2AB006D80AD /* Main.storyboard */; };
 		1BF48C6C21DBF2AC006D80AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF48C6B21DBF2AC006D80AD /* Assets.xcassets */; };
 		1BF48C6F21DBF2AC006D80AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF48C6D21DBF2AC006D80AD /* LaunchScreen.storyboard */; };
+		1BF48C7921DBF2BC006D80AD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF48C7821DBF2BC006D80AD /* CloudKit.framework */; };
+		1BF48C7E21DBF376006D80AD /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C7D21DBF376006D80AD /* PostListTableViewController.swift */; };
+		1BF48C8021DBF3DD006D80AD /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C7F21DBF3DD006D80AD /* PostDetailTableViewController.swift */; };
+		1BF48C8221DBF422006D80AD /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C8121DBF422006D80AD /* AddPostTableViewController.swift */; };
+		1BF48C8521DBF670006D80AD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C8421DBF670006D80AD /* Post.swift */; };
+		1BF48C8721DBF8A7006D80AD /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C8621DBF8A7006D80AD /* Comment.swift */; };
+		1BF48C8A21DC05CA006D80AD /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C8921DC05CA006D80AD /* PostController.swift */; };
+		1BF48C8C21DC1101006D80AD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C8B21DC1101006D80AD /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BF48C6121DBF2AB006D80AD /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF48C6421DBF2AB006D80AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BF48C6621DBF2AB006D80AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BF48C6921DBF2AB006D80AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BF48C6B21DBF2AC006D80AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF48C6E21DBF2AC006D80AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BF48C7021DBF2AC006D80AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF48C7621DBF2BB006D80AD /* Continuum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Continuum.entitlements; sourceTree = "<group>"; };
+		1BF48C7821DBF2BC006D80AD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1BF48C7D21DBF376006D80AD /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		1BF48C7F21DBF3DD006D80AD /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		1BF48C8121DBF422006D80AD /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+		1BF48C8421DBF670006D80AD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1BF48C8621DBF8A7006D80AD /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		1BF48C8921DC05CA006D80AD /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		1BF48C8B21DC1101006D80AD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF48C7921DBF2BC006D80AD /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,7 @@
 			children = (
 				1BF48C6321DBF2AB006D80AD /* Continuum */,
 				1BF48C6221DBF2AB006D80AD /* Products */,
+				1BF48C7721DBF2BC006D80AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,77 @@
 		1BF48C6321DBF2AB006D80AD /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
-				1BF48C6421DBF2AB006D80AD /* AppDelegate.swift */,
-				1BF48C6621DBF2AB006D80AD /* ViewController.swift */,
-				1BF48C6821DBF2AB006D80AD /* Main.storyboard */,
-				1BF48C6B21DBF2AC006D80AD /* Assets.xcassets */,
-				1BF48C6D21DBF2AC006D80AD /* LaunchScreen.storyboard */,
-				1BF48C7021DBF2AC006D80AD /* Info.plist */,
+				1BF48C8321DBF666006D80AD /* Models */,
+				1BF48C8821DC05B8006D80AD /* Model Controllers */,
+				1BF48C7C21DBF366006D80AD /* View Controllers */,
+				1BF48C8D21DC15DA006D80AD /* Views */,
+				1BF48C7B21DBF2E6006D80AD /* UI */,
+				1BF48C7A21DBF2DC006D80AD /* Resources */,
 			);
 			path = Continuum;
+			sourceTree = "<group>";
+		};
+		1BF48C7721DBF2BC006D80AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BF48C7821DBF2BC006D80AD /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BF48C7A21DBF2DC006D80AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BF48C7621DBF2BB006D80AD /* Continuum.entitlements */,
+				1BF48C6421DBF2AB006D80AD /* AppDelegate.swift */,
+				1BF48C6B21DBF2AC006D80AD /* Assets.xcassets */,
+				1BF48C7021DBF2AC006D80AD /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1BF48C7B21DBF2E6006D80AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1BF48C6821DBF2AB006D80AD /* Main.storyboard */,
+				1BF48C6D21DBF2AC006D80AD /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1BF48C7C21DBF366006D80AD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BF48C7D21DBF376006D80AD /* PostListTableViewController.swift */,
+				1BF48C7F21DBF3DD006D80AD /* PostDetailTableViewController.swift */,
+				1BF48C8121DBF422006D80AD /* AddPostTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1BF48C8321DBF666006D80AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BF48C8421DBF670006D80AD /* Post.swift */,
+				1BF48C8621DBF8A7006D80AD /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1BF48C8821DC05B8006D80AD /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BF48C8921DC05CA006D80AD /* PostController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		1BF48C8D21DC15DA006D80AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BF48C8B21DC1101006D80AD /* PostTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +176,14 @@
 				TargetAttributes = {
 					1BF48C6021DBF2AB006D80AD = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BF48C6721DBF2AB006D80AD /* ViewController.swift in Sources */,
 				1BF48C6521DBF2AB006D80AD /* AppDelegate.swift in Sources */,
+				1BF48C8721DBF8A7006D80AD /* Comment.swift in Sources */,
+				1BF48C7E21DBF376006D80AD /* PostListTableViewController.swift in Sources */,
+				1BF48C8C21DC1101006D80AD /* PostTableViewCell.swift in Sources */,
+				1BF48C8221DBF422006D80AD /* AddPostTableViewController.swift in Sources */,
+				1BF48C8A21DC05CA006D80AD /* PostController.swift in Sources */,
+				1BF48C8021DBF3DD006D80AD /* PostDetailTableViewController.swift in Sources */,
+				1BF48C8521DBF670006D80AD /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +376,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Resources/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56CLV9J785;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Continuum/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +395,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Resources/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56CLV9J785;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Continuum/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
