@@ -20,22 +20,17 @@ class PostTableViewCell: UITableViewCell {
         }
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     func updateViews() {
         guard let post = post else { return }
+        
+        PostController.shared.fetchCommentsFor(post: post) { (success) in
+            if success {
+                DispatchQueue.main.async {
+                    self.postCommentCountLabel.text = "\(post.comments.count) Comments"
+                }
+            }
+        }
         postImageView.image = post.photo
         postCaptionLabel.text = post.caption
-        postCommentCountLabel.text = "\(post.comments.count) Comments"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

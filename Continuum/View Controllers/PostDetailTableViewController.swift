@@ -16,6 +16,7 @@ class PostDetailTableViewController: UITableViewController {
     
     var post: Post? {
         didSet {
+            loadViewIfNeeded()
             updateViews()
         }
     }
@@ -31,9 +32,9 @@ class PostDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableView.automaticDimension
-        updateViews()
     }
     
     // MARK: - Setup
@@ -55,6 +56,7 @@ class PostDetailTableViewController: UITableViewController {
         newCommentAlertController.addTextField { (commentTextField) in
             commentTextField.placeholder = "Add your comment here..."
             commentTextField.autocapitalizationType = .sentences
+            commentTextField.autocorrectionType = .default
         }
         
         let addNewCommentAction = UIAlertAction(title: "Okay", style: .default) { (_) in
@@ -63,6 +65,7 @@ class PostDetailTableViewController: UITableViewController {
             
             PostController.shared.addComment(commentText, to: post, completion: { (comment) in
                 DispatchQueue.main.async {
+                    guard let comment = comment else { return }
                     commentText = comment.text
                     self.tableView.reloadData()
                 }
@@ -104,8 +107,7 @@ class PostDetailTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let post = post else { return 0 }
-        return post.comments.count
+        return post?.comments.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -116,5 +118,4 @@ class PostDetailTableViewController: UITableViewController {
         cell.detailTextLabel?.text = "\(dateFormatter.string(from: comment.timestamp))"
         return cell
     }
-    
 }

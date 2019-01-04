@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BABA3C321DD7EEA0044F4C9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABA3C221DD7EEA0044F4C9 /* Extensions.swift */; };
 		1BF48C6521DBF2AB006D80AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF48C6421DBF2AB006D80AD /* AppDelegate.swift */; };
 		1BF48C6A21DBF2AB006D80AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF48C6821DBF2AB006D80AD /* Main.storyboard */; };
 		1BF48C6C21DBF2AC006D80AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF48C6B21DBF2AC006D80AD /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BABA3C221DD7EEA0044F4C9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1BF48C6121DBF2AB006D80AD /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF48C6421DBF2AB006D80AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BF48C6921DBF2AB006D80AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BABA3C121DD7EDF0044F4C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BABA3C221DD7EEA0044F4C9 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1BF48C5821DBF2AB006D80AD = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		1BF48C6321DBF2AB006D80AD /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
+				1BABA3C121DD7EDF0044F4C9 /* Extensions */,
 				1BF48C8321DBF666006D80AD /* Models */,
 				1BF48C8821DC05B8006D80AD /* Model Controllers */,
 				1BF48C7C21DBF366006D80AD /* View Controllers */,
@@ -183,6 +194,9 @@
 					1BF48C6021DBF2AB006D80AD = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -238,6 +252,7 @@
 				1BF48C8A21DC05CA006D80AD /* PostController.swift in Sources */,
 				1BF87D5C21DC6F20009D92EB /* PhotoSelectViewController.swift in Sources */,
 				1BF48C8021DBF3DD006D80AD /* PostDetailTableViewController.swift in Sources */,
+				1BABA3C321DD7EEA0044F4C9 /* Extensions.swift in Sources */,
 				1BF48C8521DBF670006D80AD /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
